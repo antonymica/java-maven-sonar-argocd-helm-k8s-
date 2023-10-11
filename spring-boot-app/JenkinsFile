@@ -1,7 +1,7 @@
 pipeline {
   agent {
     docker {
-      image 'antonymica/java-maven-k8s:v1'
+      image 'antonymica/java-maven-k8s'
       args '--user root -v /var/run/docker.sock:/var/run/docker.sock' // mount Docker socket to access the host's Docker daemon
     }
   }
